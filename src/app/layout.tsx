@@ -34,7 +34,7 @@ export default function RootLayout({
             <Sidebar />
           </div>
           <div className="w-full ">
-            <Navbar />
+            
             <div className="overflow-hidden">
               {children}
             </div>

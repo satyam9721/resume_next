@@ -14,7 +14,7 @@ const SideBar = () => {
   return (
     <div
       className={cn(
-        "sidebar w-72 h-full rounded-3xl bg-[#21476b] p-4 lg:block  hover:shadow-[#ffcd67] cursor-pointer shadow-2xl relative duration-300 ease-linear",
+        "sidebar w-72 h-full rounded-3xl bg-[#21476b] border border-[#3e76ab] p-4 lg:block  hover:shadow-[#ffcd67] cursor-pointer shadow-2xl relative duration-300 ease-linear",
         collapse && "w-20"
       )}
     >

@@ -19,36 +19,32 @@ import NavbarItems from "./NavbarItems";
 const NavbarRoutes = () => {
   const FinanceRoutes = [
     {
-      href: "/dashboard",
-      name: "Dashboard",
+      href: "/",
+      name: "About",
       icon: LayoutDashboard,
     },
     {
       href: "/user/tax-calculater",
-      name: "Tax Calculation",
+      name: "Resume",
       icon: BadgeIndianRupee,
     },
    
     {
       href: "/dashboard/hra",
-      name: "HRA Calculator",
+      name: "Portfolio",
       icon: Hotel,
     },
     {
       href: "/pending-bills",
-      name: "Pending Bills",
+      name: "Blog",
       icon: ReceiptText,
     },
     {
       href: "/user/settings",
-      name: "Settings",
+      name: "Contact",
       icon: Settings,
     },
-    {
-      href: "/ai-docs",
-      name: "Ai-Pdf",
-      icon: Bot,
-    },
+   
   
   ];
 

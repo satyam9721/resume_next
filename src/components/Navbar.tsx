@@ -5,18 +5,19 @@ import { CircleUserRound } from "lucide-react";
 
 import { redirect, useRouter } from "next/navigation";
 import { toast } from "sonner";
+import NavbarRoutes from "./NavbarRoutes";
 
 import Link from "next/link";
 const Navbar = () => {
   const router = useRouter();
 
   return (
-    <nav className="shadow-xl hover:shadow-[#ffcd67] m-3 rounded-md bg-[#21476b]  flex items-center py-2 px-6 justify-between ">
+    <nav className="text-white bg-[#3e76ab] rounded-bl-2xl rounded-tr-3xl hidden lg:block ">
       <div className="flex items-center gap-2">
-        <Link href="/profile">
+       
           {" "}
-          <CircleUserRound />
-        </Link>
+          <NavbarRoutes/>
+     
       </div>
     </nav>
   );
