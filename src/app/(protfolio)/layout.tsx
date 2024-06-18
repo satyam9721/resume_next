@@ -9,17 +9,20 @@ const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   const result =
     formattedRoute.charAt(0).toUpperCase() + formattedRoute.slice(1);
   return (
-    <main className="shadow-xl  text-white h-screen cursor-pointer hover:shadow-[#ffcd67] mx-2 rounded-3xl border border-[#3e76ab] bg-[#21476b]">
+    <main className="shadow-xl  text-white w-full  cursor-pointer hover:shadow-[#ffcd67] mx-2 rounded-3xl border border-[#3e76ab] bg-[#21476b]">
       <div className="flex items-center justify-between">
-        <div className="mx-8 mt-4">
+        <div className="mx-8 mt-4 flex flex-col">
           <span className="text-4xl font-bold  ">
             {result == "" ? "About" : result}
           </span>
+         {/* <span className=" w-[50%]  rounded-xl border-b-4 border-amber-400">
+
+         </span> */}
         </div>
 
         <Nav />
       </div>
-      <div className="p-8">{children}</div>
+      <div className="p-8 ">{children}</div>
     </main>
   );
 };
