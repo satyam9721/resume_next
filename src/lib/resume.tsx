@@ -50,3 +50,14 @@ export const socialMediaLinks = [
     },
     // Add more social media objects as needed
   ];
+
+
+  export const AboutMe = `I am a  Web Developer with a fervor for crafting interactive and responsive web applications. Possessing proficiency in JavaScript, TypeScript, React, Redux, Node.js, Express.js, Next.js,
+        HTML, CSS, and Git,
+       I bring a comprehensive skill set to the development landscape. My commitment 
+       to continual learning is evidenced by my quick adaptability and eagerness to broaden my knowledge base. Recognized as a dedicated team player, I am enthusiastic about collaborative efforts to conceive and deliver exceptional
+        applications. My professional approach and passion for web
+         development fuel my commitment to contributing meaningfully to 
+         collaborative projects I collaborate closely with clients to
+      create efficient, scalable, and user-friendly solutions that solve
+      real-world problems. Let's work together to bring your ideas to life!`

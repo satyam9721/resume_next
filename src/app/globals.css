@@ -195,3 +195,21 @@ article {
 
   z-index: 1; */
 }
+
+/* Custom scrollbar for webkit browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #163a5c; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #194c7c; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Roundness of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0f2d48; /* Color of the scrollbar thumb on hover */
+}

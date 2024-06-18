@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={ubuntu.className}>
-        <main className="min-h-screen flex bg-[#163a5c] p-10">
+        <main className="min-h-screen flex bg-[#163a5c] p-8 ">
           <div className="hidden lg:block sticky top-0 h-full">
             <Sidebar />
           </div>
