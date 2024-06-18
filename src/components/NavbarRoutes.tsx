@@ -24,23 +24,23 @@ const NavbarRoutes = () => {
       icon: LayoutDashboard,
     },
     {
-      href: "/user/tax-calculater",
-      name: "Resume",
+      href: "/projects",
+      name: "Projects",
       icon: BadgeIndianRupee,
     },
    
     {
-      href: "/dashboard/hra",
-      name: "Portfolio",
+      href: "/resume",
+      name: "Resume",
       icon: Hotel,
     },
     {
-      href: "/pending-bills",
-      name: "Blog",
+      href: "/certificates",
+      name: "Certificate",
       icon: ReceiptText,
     },
     {
-      href: "/user/settings",
+      href: "/contact",
       name: "Contact",
       icon: Settings,
     },
