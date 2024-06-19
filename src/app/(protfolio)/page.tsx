@@ -37,14 +37,14 @@ export default function Home() {
             
             </span>
           </h2>
-         
-        </motion.div>
-         
-
-      <p className="text-slate-300 text-justify ">
+          <p className="text-slate-300 mt-3 text-justify ">
         {AboutMe}
        
       </p>
+        </motion.div>
+         
+
+     
       <Skills/>
     </main>
   );
