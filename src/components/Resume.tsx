@@ -1,63 +1,95 @@
 "use client"
 import { BookOpenText, Briefcase } from 'lucide-react';
-import React, { useRef } from 'react';
+import React from 'react';
 import { educationData, experienceData } from '@/lib/resume';
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
+const iconVariants = {
+  initial: { scale: 1, opacity: 1 },
+  hover: { scale: 1.2, transition: { duration: 0.3 } },
+  tap: { scale: 0.9, transition: { duration: 0.2 } },
+};
+
+const listVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, x: -20 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+};
 
 const Resume = () => {
-  
   return (
     <article className="resume">
-
-<section className="timeline">
+      <section className="timeline">
         <div className="title-wrapper">
-          <div>
-          <div className='icon-box ml-[-8px] text-[#ffcd67] shadow-2xl  bg-[#373737] p-3 rounded-xl transform hover:translate-y-1 hover:shadow-xl transition ease-in-out duration-300'>
-            <Briefcase/>
-            </div>
-          </div>
+          <motion.div
+            className='icon-box ml-[-8px] text-[#ffcd67] shadow-2xl  bg-[#373737] p-3 rounded-xl'
+            variants={iconVariants}
+            initial="initial"
+            whileHover="hover"
+            whileTap="tap"
+          >
+            <Briefcase />
+          </motion.div>
           <h3 className="text-xl font-semibold text-[#ffcd67]">Experience</h3>
         </div>
 
-        <ol className="timeline-list">
+        <motion.ol 
+          className="timeline-list"
+          initial="hidden"
+          animate="visible"
+          variants={listVariants}
+        >
           {experienceData.map((item, index) => (
-            <li className="timeline-item" key={index}>
+            <motion.li 
+              className="timeline-item" 
+              key={index}
+              variants={itemVariants}
+            >
               <h4 className="h4 timeline-item-title">{item.title}</h4>
               <span>{item.duration}</span>
               <p className="timeline-text">{item.description}</p>
-            </li>
+            </motion.li>
           ))}
-        </ol>
+        </motion.ol>
       </section>
-    
+
       <section className="timeline">
         <div className="title-wrapper">
-          <div >
-            <div className='icon-box ml-[-8px] text-[#ffcd67] shadow-2xl  bg-[#373737] p-3 rounded-xl transform hover:translate-y-1 hover:shadow-xl transition ease-in-out duration-300'>
+          <motion.div
+            className='icon-box ml-[-8px] text-[#ffcd67] shadow-2xl  bg-[#373737] p-3 rounded-xl'
+            variants={iconVariants}
+            initial="initial"
+            whileHover="hover"
+            whileTap="tap"
+          >
             <BookOpenText />
-            </div>
-    
-          </div>
+          </motion.div>
           <h3 className="text-xl font-semibold text-[#ffcd67]">Education</h3>
         </div>
-      
-        <ol className="timeline-list">
+
+        <motion.ol 
+          className="timeline-list"
+          initial="hidden"
+          animate="visible"
+          variants={listVariants}
+        >
           {educationData.map((item, index) => (
-             
-            <li className="timeline-item" key={index}>
+            <motion.li 
+              className="timeline-item" 
+              key={index}
+              variants={itemVariants}
+            >
               <h4 className="h4 timeline-item-title">{item.title}</h4>
               <span>{item.duration}</span>
               <p className="timeline-text">{item.description}</p>
-            </li>
-         
+            </motion.li>
           ))}
-        </ol>
-   
+        </motion.ol>
       </section>
-
-     
-
     </article>
   );
 };
