@@ -129,6 +129,10 @@ export const SkillsData  = [
     name: "Gitlab",
     img: "https://cdn.icon-icons.com/icons2/2699/PNG/512/gitlab_tile_logo_icon_170092.png",
   },
+  {
+    name:"React query",
+    img:"https://media.dev.to/cdn-cgi/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fglll1swn5umyjemv09ql.png"
+  }
 ];
 
 export const projectsData = [
@@ -213,4 +217,41 @@ export const projectsData = [
       previewUrl: "https://pomodose.vercel.app",
     }
 
+];
+
+
+export const educationData = [
+  {
+    title: "University school of the arts",
+    duration: "2007 — 2008",
+    description: "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
+  },
+  {
+    title: "New york academy of art",
+    duration: "2006 — 2007",
+    description: "Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis.."
+  },
+  {
+    title: "High school of art and design",
+    duration: "2002 — 2004",
+    description: "Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos."
+  }
+];
+
+export const experienceData = [
+  {
+    title: "Creative director",
+    duration: "2015 — Present",
+    description: "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur."
+  },
+  {
+    title: "Art director",
+    duration: "2013 — 2015",
+    description: "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
+  },
+  {
+    title: "Web designer",
+    duration: "2010 — 2013",
+    description: "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
+  }
 ];
