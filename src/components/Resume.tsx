@@ -17,7 +17,7 @@ const Resume = () => {
             <Briefcase/>
             </div>
           </div>
-          <h3 className="h3">Experience</h3>
+          <h3 className="text-xl font-semibold text-[#ffcd67]">Experience</h3>
         </div>
 
         <ol className="timeline-list">
@@ -39,7 +39,7 @@ const Resume = () => {
             </div>
     
           </div>
-          <h3 className="h3 ">Education</h3>
+          <h3 className="text-xl font-semibold text-[#ffcd67]">Education</h3>
         </div>
       
         <ol className="timeline-list">

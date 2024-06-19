@@ -5,6 +5,7 @@ import {
   MapPin,
   TwitterIcon,
   Linkedin,
+  Github,
 } from "lucide-react";
 interface Contact {
   type: string;
@@ -50,6 +51,11 @@ export const socialMediaLinks = [
     url: "https://www.linkedin.com/in/aman-gupta-7577691b5",
     icon: <Linkedin />,
   },
+  {
+    name: "Github",
+    url: "https://github.com/amanguptak",
+    icon: <Github />,
+  }
   // Add more social media objects as needed
 ];
 

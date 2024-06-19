@@ -1,9 +1,12 @@
+import Mail from '@/components/Mail'
 import React from 'react'
 
 
 const contacts = () => {
   return (
-    <div>Contacts</div>
+    <div>
+      <Mail/>
+    </div>
   )
 }
 
