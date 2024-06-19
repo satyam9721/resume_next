@@ -30,8 +30,8 @@ const NavbarRoutes = () => {
     },
    
     {
-      href: "/resume",
-      name: "Resume",
+      href: "/experience",
+      name: "Experience",
       icon: Hotel,
     },
     {
