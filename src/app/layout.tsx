@@ -4,6 +4,7 @@ import "./globals.css";
 import { Ubuntu } from "next/font/google";
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
+import MobNavbar from '../components/MobNavbar';
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -27,13 +28,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" >
-      <body className={`${ubuntu.className}  bg-[#163a5c]`}>
-        <main className="min-h-screen flex  p-8 ">
-          <div className="hidden lg:block sticky top-0 h-full">
+    <html lang="en">
+      <body className={`${ubuntu.className} bg-[#163a5c]`}>
+        <main className="min-h-screen flex flex-col lg:flex-row p-8">
+          <div className="lg:sticky top-0 w-full lg:w-auto lg:h-full mb-8 lg:mb-0">
             <Sidebar />
           </div>
-          <div className="w-full h-screen">{children}</div>
+          <div className="flex-1 h-screen">
+            {children}
+          </div>
+          <MobNavbar/>
         </main>
         <Toaster position="top-center" richColors />
       </body>

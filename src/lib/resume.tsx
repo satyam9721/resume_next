@@ -35,7 +35,7 @@ export const contacts: Contact[] = [
   {
     type: "Location",
     icon: <MapPin />,
-    value: "Sacramento, California, USA",
+    value: "Delhi India",
     isAddress: true,
   },
 ];
@@ -227,37 +227,35 @@ export const projectsData = [
 
 
 export const educationData = [
+
   {
-    title: "University school of the arts",
-    duration: "2007 — 2008",
-    description: "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
+    title: "KIET Group Of Institutions (AKTU) Delhi, India ",
+    duration: "2018 — 2022",
+    description: "  B.Tech (Electronics & Communication)   8.12 CGPA (81.2%) "
   },
   {
-    title: "New york academy of art",
-    duration: "2006 — 2007",
-    description: "Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis.."
+    title: "Sarswati Vidhya Mandir Kanpur , India",
+    duration: "",
+    description: "12th (77%)"
   },
-  {
-    title: "High school of art and design",
-    duration: "2002 — 2004",
-    description: "Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos."
-  }
+
+
 ];
 
 export const experienceData = [
   {
-    title: "Creative director",
-    duration: "2015 — Present",
-    description: "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur."
+    title: "Web Developer Intern",
+    duration: "Jun 2021 - Nov 2021",
+    description: "Developing and maintaining web applications using Javascript, HTML, CSS, and other related technologies. Acquired solid knowledge of JavaScript, HTML, CSS, and React Js for front-end web development. Demonstrated proficiency in JavaScript and React, optimizing code for improved performance in scalable web applications. Implementing responsive design and ensuring cross-browser compatibility."
   },
   {
-    title: "Art director",
-    duration: "2013 — 2015",
-    description: "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
+    title: "MERN STACK Developer",
+    duration: "Jan 2021 - Feb 2022",
+    description: "Acquired solid knowledge of JavaScript, HTML, CSS, and React Js for front-end web development. Demonstrated proficiency in JavaScript and React, optimizing code for improved performance in scalable web applications. Implementing responsive design and ensuring cross-browser compatibility."
   },
   {
-    title: "Web designer",
-    duration: "2010 — 2013",
-    description: "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
+    title: "Full Stack Developer",
+    duration: "Feb 2023 - Present",
+    description: "Contributed to the implementation of a Feature Product section on the Pampered Chef Product project using Next.js, Scss, and Redux, enhancing web development standards. Developed frontend features for i-Communify web application, a College Club Managing Web App. Leveraged Next.js and Redux Toolkit, and incorporated Bootstrap and SCSS for a responsive design. Demonstrated expertise in sophisticated web development techniques. Achieved a 20% cost reduction for clients through strategic integration of efficient tools, emphasizing commitment to optimizing project outcomes. Designed and implemented a proficient Rest Api using Express.js. Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products. Implementing responsive design and ensuring cross-browser compatibility. Participating in code reviews and providing constructive feedback to other developers."
   }
 ];
