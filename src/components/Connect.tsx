@@ -4,7 +4,7 @@ import { contacts, socialMediaLinks } from "../lib/resume";
 import Link from "next/link";
 const Connect = () => {
   return (
-    <div className="sidebar-info_more m-5 flex flex-col items-center justify-center gap-4">
+    <div className="sidebar-info_more md:m-5 lg:flex lg:flex-col items-center justify-center gap-4 ">
       <div className="w-full h-px bg-[#333333] my-4"></div>
 
       <ul className="contacts-list grid grid-cols-1 gap-4">

@@ -46,7 +46,7 @@ const Navbar = () => {
         )}
       </button>
       <nav
-        className={`fixed bottom-0 left-0 right-0 w-full bg-[#21476b] bg-opacity-75 backdrop-blur-md shadow-2xl transform transition-transform duration-300 ease-in-out ${
+        className={`fixed bottom-0 left-0 right-0 w-full z-10 bg-[#21476b] bg-opacity-75 backdrop-blur-md shadow-2xl transform transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-y-0' : 'translate-y-full'
         } md:hidden rounded-tl-3xl rounded-tr-3xl`}
       >

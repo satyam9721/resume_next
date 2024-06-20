@@ -12,7 +12,7 @@ const Skill = () => {
         
         >
           <h1 className="text-2xl font-bold text-white mt-2">Skills</h1>
-    <ul className="grid lg:grid-cols-6 m-5 grid-cols-2 gap-4">
+    <ul className="grid lg:grid-cols-6 m-5 grid-cols-3 gap-5 md:gap-4">
         {SkillsData.map((skill, index) => {
           return (
             <li
