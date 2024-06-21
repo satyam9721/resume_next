@@ -1,50 +1,64 @@
 import React from "react";
-
 import { contacts, socialMediaLinks } from "../lib/resume";
 import Link from "next/link";
-const Connect = () => {
+import { cn } from "@/lib/utils";
+
+interface ConnectProps {
+  widthManager?: boolean;
+}
+
+const Connect = ({ widthManager }: ConnectProps) => {
   return (
-    <div className="sidebar-info_more md:m-5 lg:flex lg:flex-col items-center justify-center gap-4 ">
+    <div className={cn("sidebar-info_more md:m-5 lg:flex lg:flex-col items-center justify-center gap-4", widthManager && "md:m-0")}>
       <div className="w-full h-px bg-[#333333] my-4"></div>
 
-      <ul className="contacts-list grid grid-cols-1 gap-4">
+      <ul className={cn("contacts-list grid grid-cols-1 gap-4")}>
         {contacts.map((contact, index) => (
-          <li key={index} className="contact-item flex items-center gap-4">
-            <div className="icon-box text-[#ffcd67] shadow-2xl bg-[#373737] p-3 rounded-xl transform hover:translate-y-1 hover:shadow-xl transition ease-in-out duration-300">
+          <li key={index} className="contact-item flex items-center gap-4 group">
+            <div className="icon-box text-[#ffcd67] shadow-2xl  p-3 rounded-xl transition ease-in-out duration-300">
               {contact.icon}
             </div>
-            <div className="contact-info w-[calc(100%-46px)]">
-              <p className="contact-title text-gray-400 text-xs uppercase mb-1">
-                {contact.type}
-              </p>
-              {contact.href ? (
-                <a
-                  href={contact.href}
-                  className="contact-link text-white text-sm"
-                >
-                  {contact.value}
-                </a>
-              ) : contact.datetime ? (
-                <time
-                  dateTime={contact.datetime}
-                  className="text-white text-sm"
-                >
-                  {contact.value}
-                </time>
-              ) : contact.isAddress ? (
-                <address className="text-white text-sm not-italic">
-                  {contact.value}
-                </address>
-              ) : (
-                <span className="text-white text-sm">{contact.value}</span>
-              )}
+            <div className="relative">
+              <div className={cn(
+                "contact-info w-[calc(100%-46px)] transition-transform duration-500",
+                widthManager && "group-hover:transform group-hover:rotateY-15 group-hover:scale-105 group-hover:opacity-100"
+              )}>
+                <p className={cn(
+                  "contact-title text-gray-400 text-xs uppercase mb-1 transition-opacity duration-300",
+                  widthManager ? "opacity-0 group-hover:opacity-100 " : "opacity-100"
+                )}>
+                  {contact.type}
+                </p>
+                {contact.href ? (
+                  <Link href={contact.href} className={cn(
+                    "contact-link text-white text-sm transition-opacity duration-300",
+                    widthManager ? "opacity-0 group-hover:opacity-100 " : "opacity-100"
+                  )}>
+                    {contact.value}
+                  </Link>
+                ) : contact.datetime ? (
+                  <time dateTime={contact.datetime} className={cn(
+                    "text-white text-sm transition-opacity duration-300",
+                    widthManager ? "opacity-0 group-hover:opacity-100" : "opacity-100"
+                  )}>
+                    {contact.value}
+                  </time>
+                ) : (
+                  <span className={cn(
+                    "text-white text-sm transition-opacity duration-300",
+                    widthManager ? "opacity-0 group-hover:opacity-100" : "opacity-100"
+                  )}>
+                    {contact.value}
+                  </span>
+                )}
+              </div>
             </div>
           </li>
         ))}
       </ul>
 
       <div className="w-full h-px bg-[#333333] my-4"></div>
-      <ul className="social-list flex justify-start items-center gap-4 pb-1 pl-2">
+      <ul className={cn("social-list flex justify-start items-center gap-4 pb-1 pl-2", widthManager && "flex-col mr-1")}>
         {socialMediaLinks.map((social, index) => (
           <li key={index} className="social-item">
             <Link

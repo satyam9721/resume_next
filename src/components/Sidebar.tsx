@@ -11,6 +11,7 @@ const SideBar = () => {
   const [mobCollapse, setMobCollapse] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768); // Define breakpoint for mobile view
@@ -42,7 +43,7 @@ const SideBar = () => {
         mobCollapse ? "h-86" : "h-full"
       )}
     >
-      <Avatar />
+      <Avatar widthManager={collapse}/>
       <div className="absolute -right-3 top-14 hidden lg:block text-[#ffcd67]">
         {collapse ? (
           <ArrowBigRightDash onClick={handleCollapse} />
@@ -64,10 +65,10 @@ const SideBar = () => {
         transition={{ duration: 0.5 }}
         className={cn(mobCollapse ? "block px-5 md:hidden" : "hidden")}
       >
-        <Connect />
+        <Connect  />
       </motion.div>
       <div className={cn("hidden", { "md:block": !mobCollapse })}>
-        <Connect />
+        <Connect widthManager={collapse}/>
       </div>
     </motion.div>
   );
