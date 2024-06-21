@@ -1,13 +1,20 @@
+"use client"
 import React from "react";
 import { contacts, socialMediaLinks } from "../lib/resume";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-
+import { motion } from "framer-motion";
 interface ConnectProps {
   widthManager?: boolean;
 }
 
 const Connect = ({ widthManager }: ConnectProps) => {
+  const iconVariants = {
+    initial: { scale: 1, opacity: 1 },
+    hover: { scale: 1.2, transition: { duration: 0.3 } },
+    tap: { scale: 0.9, transition: { duration: 0.2 } },
+  };
+  
   return (
     <div className={cn("sidebar-info_more md:m-5 lg:flex lg:flex-col items-center justify-center gap-4", widthManager && "md:m-0")}>
       <div className="w-full h-px bg-[#333333] my-4"></div>
@@ -15,9 +22,17 @@ const Connect = ({ widthManager }: ConnectProps) => {
       <ul className={cn("contacts-list grid grid-cols-1 gap-4")}>
         {contacts.map((contact, index) => (
           <li key={index} className="contact-item flex items-center gap-4 group">
-            <div className="icon-box text-[#ffcd67] shadow-2xl  p-3 rounded-xl transition ease-in-out duration-300">
+              
+            <motion.div
+            className='icon-box ml-[-8px] text-[#ffcd67] shadow-2xl  bg-[#373737] p-3 rounded-xl'
+            variants={iconVariants}
+            initial="initial"
+            whileHover="hover"
+            whileTap="tap"
+          >
               {contact.icon}
-            </div>
+              </motion.div>
+     
             <div className="relative">
               <div className={cn(
                 "contact-info w-[calc(100%-46px)] transition-transform duration-500",
@@ -67,7 +82,10 @@ const Connect = ({ widthManager }: ConnectProps) => {
               className="social-link text-gray-400 text-xl hover:text-gray-300 transform transition-transform duration-200 relative before:absolute before:inset-0 before:bg-inherit before:rounded-full before:transform before:scale-100 before:transition before:duration-200 before:shadow-lg hover:before:scale-110 hover:before:shadow-xl hover:-translate-y-1 "
               aria-label={social.name} 
             >
+             
               {social.icon}
+
+
             </Link>
           </li>
         ))}

@@ -19,6 +19,7 @@ const Skill = () => {
               key={index}
               className="icon-box relative rounded-xl overflow-hidden flex flex-col items-center m-2 w-24 h-24 border-2 cursor-pointer border-[#ffcd67] p-4 transform hover:translate-y-1 hover:shadow-xl transition ease-in-out duration-300"
             >
+              
               <img
                 src={skill.img}
                 alt={skill.name}

@@ -69,7 +69,7 @@ const SideBar = () => {
       </motion.div>
       <div className={cn("hidden", { "md:block": !mobCollapse })}>
         <Connect widthManager={collapse}/>
-        <Link href="/websiteinfo" className="text-[#ffcd67] text-xs">website info</Link>
+        {!collapse &&<Link href="/websiteinfo" className="text-[#ffcd67] text-xs">website info</Link>}
       </div>
     
     </motion.div>
