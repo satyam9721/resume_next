@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { ArrowBigLeftDash, ArrowBigRightDash, PanelTopClose, PanelTopOpen } from "lucide-react";
 import Avatar from "./Avatar";
 import Connect from "./Connect";
-
+import Link from "next/link"
 const SideBar = () => {
   const [collapse, setCollapse] = useState(false);
   const [mobCollapse, setMobCollapse] = useState(false);
@@ -69,7 +69,9 @@ const SideBar = () => {
       </motion.div>
       <div className={cn("hidden", { "md:block": !mobCollapse })}>
         <Connect widthManager={collapse}/>
+        <Link href="/websiteinfo" className="text-[#ffcd67] text-xs">website info</Link>
       </div>
+    
     </motion.div>
   );
 };
