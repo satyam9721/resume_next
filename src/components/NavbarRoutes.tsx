@@ -44,7 +44,11 @@ const NavbarRoutes = () => {
       name: "Contact",
       icon: Settings,
     },
-   
+    {
+      href: "/websiteinfo",
+      name: "info",
+      icon: Settings,
+    },
   
   ];
 

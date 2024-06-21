@@ -64,8 +64,8 @@ const Connect = ({ widthManager }: ConnectProps) => {
             <Link
               href={social.url}
               target="_blank"
-              className="social-link text-gray-400 text-xl hover:text-gray-300 transform transition-transform duration-200 relative before:absolute before:inset-0 before:bg-inherit before:rounded-full before:transform before:scale-100 before:transition before:duration-200 before:shadow-lg hover:before:scale-110 hover:before:shadow-xl hover:-translate-y-1"
-              aria-label={social.name}
+              className="social-link text-gray-400 text-xl hover:text-gray-300 transform transition-transform duration-200 relative before:absolute before:inset-0 before:bg-inherit before:rounded-full before:transform before:scale-100 before:transition before:duration-200 before:shadow-lg hover:before:scale-110 hover:before:shadow-xl hover:-translate-y-1 "
+              aria-label={social.name} 
             >
               {social.icon}
             </Link>
