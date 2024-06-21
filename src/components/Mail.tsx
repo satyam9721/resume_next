@@ -29,7 +29,7 @@ const Contact: React.FC = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const emailLink = 'https://formspree.io/f/xrgnwlok';
+
 
   const onSubmit = async (data: ContactFormInputs) => {
     setLoading(true);
