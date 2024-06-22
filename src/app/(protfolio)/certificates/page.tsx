@@ -1,15 +1,17 @@
 import React from 'react'
-import SingleProject from '../../../components/SingleProject';
+import SingleProject from '@/components/SingleProject';
 
 const Certificates = () => {
   return (
-    <div>
+    <div className=''
+    title='click for certificate link'
+    >
      <SingleProject
       gitUrl=''
-      title='My Project'
-      previewUrl=''
-      description='About my certificate'
-      imgUrl='https://www.w3schools.com/html/img_cert_html.jpg'
+      title='Mern Stack'
+      previewUrl='https://mern-certificate-aman.tiiny.site'
+      description='This certificate is awarded by Wipro and its learning partner, StackRoute, upon the successful completion of the internship in MERN stack and the successful passing of three tollgate examinations. It serves as a testament to my proficiency and skills in the MERN stack.'
+      imgUrl='/certificates/mern.png'
      />
     </div>
   )

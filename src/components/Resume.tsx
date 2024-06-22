@@ -49,7 +49,8 @@ const Resume = () => {
               key={index}
               variants={itemVariants}
             >
-              <h4 className="h4 timeline-item-title">{item.title}</h4>
+               <span className='text-lg font-bold text-[#fdd178]'>{item.companyName}</span>
+              <h3 className="h3 timeline-item-title"> {item.title}</h3>
               <span>{item.duration}</span>
               <p className="timeline-text">{item.description}</p>
             </motion.li>
