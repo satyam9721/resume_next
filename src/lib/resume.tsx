@@ -15,27 +15,27 @@ interface Contact {
   datetime?: string;
   isAddress?: boolean;
 }
-export const Name = "Aman Gupta";
-export const Occupation = "Web Developer";
+export const Name = "Satyam Gupta";
+export const Occupation = "Web Developer & Devops Engineer";
 
 export const contacts: Contact[] = [
   {
     type: "Email",
     icon: <Mail />,
-    value: "imaman9294@gmail.com",
+    value: "satyamjio1456@gmail.com",
     href: "mailto:",
   },
   {
     type: "Phone",
     icon: <Phone />,
-    value: "9170615023",
+    value: "8445630698",
     href: "tel:+12133522795",
   },
 
   {
     type: "Location",
     icon: <MapPin />,
-    value: "Delhi India",
+    value: "Navi Mumbai India",
     isAddress: true,
   },
 ];
@@ -43,31 +43,23 @@ export const contacts: Contact[] = [
 export const socialMediaLinks = [
   {
     name: "Twitter",
-    url: "https://x.com/amangupta041?t=UVyLQ5ZY9ZRQKfy4WmtUmw&s=09",
+    url: "twitter.com/Techy_Satyam",
     icon: <TwitterIcon />,
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/aman-gupta-7577691b5",
+    url: "https://www.linkedin.com/in/satyam-gupta-9580141b9/",
     icon: <Linkedin />,
   },
   {
     name: "Github",
-    url: "https://github.com/amanguptak",
+    url: "https://github.com/satyam9721",
     icon: <Github />,
   }
   // Add more social media objects as needed
 ];
 
-export const AboutMe = `I am a  Web Developer with a fervor for crafting interactive and responsive web applications. Possessing proficiency in JavaScript, TypeScript, React, Redux, Node.js, Express.js, Next.js,
-        HTML, CSS, and Git,
-       I bring a comprehensive skill set to the development landscape. My commitment 
-       to continual learning is evidenced by my quick adaptability and eagerness to broaden my knowledge base. Recognized as a dedicated team player, I am enthusiastic about collaborative efforts to conceive and deliver exceptional
-        applications. My professional approach and passion for web
-         development fuel my commitment to contributing meaningfully to 
-         collaborative projects I collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`;
+export const AboutMe = `I am a Web Developer & DevOps Engineer with a fervor for crafting interactive and responsive web applications. Possessing proficiency in JavaScript, TypeScript, React, Redux, Node.js, Express.js, Next.js, HTML, CSS, and Git, I bring a comprehensive skill set to the development landscape. Additionally, I am skilled in DevOps practices, including Docker, Kubernetes, Linux, and Azure, which enable me to manage and deploy scalable applications efficiently`;
 
 export const SkillsData  = [
   {
@@ -144,84 +136,68 @@ export const SkillsData  = [
 export const projectsData = [
   {
     id: 1,
-    title: "Anime Clothing store use NextJS and Mern Stack",
-    description: "A ecommerce Web app full responsive using Next Js redux, bootstrap,,mui , expressjs and mongdb(mongoAtlas), for authentication I used jwt and stored the token inside cookies for user and admin validation I created middleware. And frontend is designed in Next js and redux toolkit used reduxthunk for api call,login ,register page with attractive user interface and use Scss..",
-    image: "/animeEcom.png",
+    title: "OTT Platform (React+vite)",
+    description: " Revolutionize entertainment with our cutting-edge React.js-based OTT Platform, For infinite scroll, the combination of React and vite allows for the implementation of smooth and efficient infinite scrolling. OTT Platform is Fully Responsive for all Screen-Size.",
+    image: "/carsoul-1.png",
     tag: ["All", "Web"],
-    gitUrl: "https://gitlab.com/animeuchiha/Ecom",
-    previewUrl: "https://anime-clothing-frontend.vercel.app",
+    gitUrl: "https://github.com/satyam9721/Full-Stack-OTT-Platform.git",
+    previewUrl: "https://6569910923ead56be689edcc--stately-quokka-c984f0.netlify.app/",
   },
   {
     id: 2,
-    title: "Job Hunting Website",
-    description: "Job website where user can apply for the job and they can accesses more feature a website after registration , frontend of website is based on React and backend is based on Express js and jwt is used for authentication mongoDB is used as database.",
-    image: "/jobwebsite.png",
+    title: "Fusion Form (MERN)",
+    description: "A Responsive Landing page with Express.js backend and MongoDB integration, facilitating seamless form submission, validation. ",
+    image: "/Fusion-Form.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/amanguptak/JobWebsite/tree/master",
-    previewUrl: "/",
+    gitUrl: "https://github.com/satyam9721/Blacksof.git",
+    previewUrl: "https://64d89c95f606f97b4bfbc2e3--papaya-licorice-467ef3.netlify.app/",
   },
  
   {
     id: 3,
-    title: "Weather App React  PWA",
-    description: "Used axios , React and used PWA features of React ",
+    title: "Weather App React",
+    description: "Used axios features , React used to build this project",
     image: "/weather.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "https://weatherappbyaman.web.app/",
+    previewUrl: "https://64b7fab71872d12250a34819--gregarious-semifreddo-588bc8.netlify.app/",
   },
   {
     id: 4,
-    title: "Motion an Ai powered note talking app",
-    description: "Motion, fully responsive web application utilizing Next.js 13, an innovative frontend framework rooted in React.js. Developed with TypeScript, the project featured meticulous styling using Tailwind CSS to achieve a refined and contemporary user interface. Integrated MongoDB as the backend database for streamlined and secure data management. Successfully orchestrated the seamless integration of the OpenAI API, enhancing the application with cutting-edge artificial intelligence capabilities. Implemented Pinecone for precise request optimization, resulting in a substantial improvement in overall performance. A standout feature of this project is the integration of an AI chatbot 🤖, seamlessly incorporated to deliver insightful responses derived from users' current notes, thereby significantly enhancing overall user engagement. This project serves as a testament to proficiency in contemporary web development technologies and a steadfast commitment to optimizing the user experience.",
-    image: "https://i.postimg.cc/hjHdG1M3/Screenshot-2023-12-11-120722.png",
+    title: "Extractify PDF",
+    description: "ExtractifyPDF, is a groundbreaking tool designed to effortlessly extract valuable content from PDF documents.With ExtractifyPDF, users can seamlessly extract desired pages from big pdf.",
+    image: "Extrifypdf.png",
     tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/amanguptak/MotionMan",
-    previewUrl: "https://motion-aman.vercel.app",
+    gitUrl: "https://github.com/satyam9721/pdf-Page-Extractor.git",
+    previewUrl: "https://6555b06795b68643a7ae964d--jazzy-druid-d5048a.netlify.app/",
   },
   {
     id: 5,
-    title: "Icommunify College Club managing web app",
-    description: "A college club managing web app for client based on mern stack where I have implemented all frontend features Using Next js and Redux toolkit and used bootstrap and scss for responsiveness for api call used axios.",
-    image: "/icom.png",
+    title: "Blog Website 🌐",
+    description: "User-friendly platform for sharing and managing blog posts. React.js is a popular JavaScript library for building user interfaces and its component-based architecture.",
+    image: "/Techy-Blog.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "https://www.icommunify.com",
+    previewUrl: "https://64aad3cb2211463cf72514cd--creative-cupcake-bb54c5.netlify.app/",
   }, {
     id: 6,
-    title: "Motion-School LMS Web Application",
-    description: "- Developed an advanced Learning Management System (LMS) platform using Next.js 13 with the App Router within the React.js Framework. Implemented TypeScript for a robust and modern frontend architecture.\n- Implemented Prisma for seamless data management and Stripe for secure payment processing.\n- Integrated Mux for advanced video streaming and employed Tailwind for modern, responsive styling.\n- Developed a multifaceted authentication system with Google, GitHub, and email login options using clerk.\n- Demonstrated proficiency in latest technologies, emphasizing commitment to user-friendly solutions in educational technology.",
-    image: "/lmsprotfolio.png",
+    title: "ATS(Smart Resume Analyzer)",
+    description: "Basically our aim is to ease the recruitment process. The process will provide the quality of applicants for the companies",
+    image: "/ATS.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/amanguptak/Motion-school",
-    previewUrl: "https://motion-school.vercel.app",
+    gitUrl: "https://github.com/satyam9721/Applicant-tracking-system-ATS-.git",
+    previewUrl: "",
   },
   {
       id: 7,
-      title: "Anime Song Music Player",
-      description: "Music player using Vanilla javascript and css with responsive design",
+      title: "Emotion-based-music-Player",
+      description: "Describes the advantages of using OpenCV, especially the Ad boost algorithm, in the process of face recognition. Detecting and recognition of face in complicated color images can be achieved using a combination of a particular algorithm",
       image: "/music-player.png",
       tag: ["All", "Web"],
-      gitUrl: "/",
-      previewUrl: "https://aman-music-playerv1.netlify.app/",
-    },
-    {
-      id: 8,
-      title: "Pomodoro Timer", 
-      description: `A Pomodoro timer has been developed utilizing React.js and vanilla CSS, leveraging the features of the React Context API for state management.  Here's how the Pomodoro Technique typically works:
-    
-      Set a Timer: Choose a task you want to work on and set a timer for 25 minutes (one Pomodoro).
-      
-      Work: Focus solely on the task at hand until the timer rings. Avoid distractions and interruptions during this time.
-      
-      Short Break: When the timer rings, take a short break (usually around 5 minutes) to relax and recharge.
-      
-      Repeat: After completing a Pomodoro and taking a short break, start another Pomodoro. After completing four Pomodoros, take a longer break (usually around 15-30 minutes).`,
-      image: "/pomodoro.png",
-      tag: ["All", "Web"],
-      gitUrl: "https://github.com/amanguptak/PomodoroTimer/tree/master",
-      previewUrl: "https://pomodose.vercel.app",
+      gitUrl: "https://github.com/satyam9721/Emotion-based-music-Player.git",
+      previewUrl: "",
     }
+    
 
 ];
 
@@ -229,14 +205,14 @@ export const projectsData = [
 export const educationData = [
 
   {
-    title: "KIET Group Of Institutions (AKTU) Delhi, India ",
-    duration: "2018 — 2022",
-    description: "  B.Tech (Electronics & Communication)   8.12 CGPA (81.2%) "
+    title: "AITH (AKTU) KANPUR, India ",
+    duration: "2019 — 2023",
+    description: "  B.Tech- IT 8.0 CGPA"
   },
   {
-    title: "Sarswati Vidhya Mandir Kanpur , India",
+    title: "SMC , India",
     duration: "",
-    description: "12th (77%)"
+    description: "12th (78%)"
   },
 
 
@@ -244,18 +220,23 @@ export const educationData = [
 
 export const experienceData = [
   {
-    title: "Web Developer Intern",
-    duration: "Jun 2021 - Nov 2021",
-    description: "Developing and maintaining web applications using Javascript, HTML, CSS, and other related technologies. Acquired solid knowledge of JavaScript, HTML, CSS, and React Js for front-end web development. Demonstrated proficiency in JavaScript and React, optimizing code for improved performance in scalable web applications. Implementing responsive design and ensuring cross-browser compatibility."
+    title: "DevOps-Tops",
+    duration: "Jio (Jan 2024-Present)",
+    description: "Specialized in Tops-OSS using Azure DevOps. Deployed and managed microservices (cost, billing, T2R, etc.) on Kubernetes. Utilized SQL for payment and account data retrieval. Implemented CI/CD pipelines and collaborated for seamless service operation. Maintained high availability and scalability, improved processes through automation, and documented procedures for knowledge sharing.  "
   },
   {
-    title: "MERN STACK Developer",
-    duration: "Jan 2021 - Feb 2022",
-    description: "Acquired solid knowledge of JavaScript, HTML, CSS, and React Js for front-end web development. Demonstrated proficiency in JavaScript and React, optimizing code for improved performance in scalable web applications. Implementing responsive design and ensuring cross-browser compatibility."
+    title: "Software Developer",
+    duration: "Emsec (Bristol - U.K) Feb-Sep 2023",
+    description: "Worked on Shodan’s Clone and Breachwise Development. It's a hacker's search engine that lets users search for various types of servers connected to the internet using a variety of filters. We are using the MERN stack technology to build this project. The documentation of Shodan was created by myself."
   },
   {
-    title: "Full Stack Developer",
-    duration: "Feb 2023 - Present",
-    description: "Contributed to the implementation of a Feature Product section on the Pampered Chef Product project using Next.js, Scss, and Redux, enhancing web development standards. Developed frontend features for i-Communify web application, a College Club Managing Web App. Leveraged Next.js and Redux Toolkit, and incorporated Bootstrap and SCSS for a responsive design. Demonstrated expertise in sophisticated web development techniques. Achieved a 20% cost reduction for clients through strategic integration of efficient tools, emphasizing commitment to optimizing project outcomes. Designed and implemented a proficient Rest Api using Express.js. Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products. Implementing responsive design and ensuring cross-browser compatibility. Participating in code reviews and providing constructive feedback to other developers."
+    title: "Techy Satyam",
+    duration: "Youtube (2019-Present)",
+    description: "Helping students to learn about the latest technology. Utilized effective SEO strategies to optimize video titles, descriptions, and tags, resulting in increased discoverability and organic growth."
+  },
+  {
+    title:"Web-Design Intern",
+    duration:"Azure Skynet Solutions Pvt.Ltd",
+    description:"Learn about how the front-end part of websites works. Adept at translating client requirements into captivating visual concepts,resulting in unique and tailored website designs that align with brand identity."
   }
 ];
