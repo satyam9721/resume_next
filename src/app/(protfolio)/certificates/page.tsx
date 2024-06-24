@@ -1,13 +1,14 @@
 import React from 'react'
 import SingleProject from '../../../components/SingleProject';
-// import cert from './image.png'
 
 const Certificates = () => {
   return (
-    <div>
+    <div className=''
+    title='click for certificate link'
+    >
      <SingleProject
       gitUrl=''
-      title='Microsoft Certificate'
+      title='My Project'
       previewUrl=''
       description='About my certificate'
       imgUrl='/image.png'

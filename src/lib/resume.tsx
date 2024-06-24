@@ -220,23 +220,18 @@ export const educationData = [
 
 export const experienceData = [
   {
-    title: "DevOps-Tops",
-    duration: "Jio (Jan 2024-Present)",
-    description: "Specialized in Tops-OSS using Azure DevOps. Deployed and managed microservices (cost, billing, T2R, etc.) on Kubernetes. Utilized SQL for payment and account data retrieval. Implemented CI/CD pipelines and collaborated for seamless service operation. Maintained high availability and scalability, improved processes through automation, and documented procedures for knowledge sharing.  "
+    title: "Web Developer Intern",
+    duration: "Jun 2021 - Nov 2021",
+    description: "Developing and maintaining web applications using Javascript, HTML, CSS, and other related technologies. Acquired solid knowledge of JavaScript, HTML, CSS, and React Js for front-end web development. Demonstrated proficiency in JavaScript and React, optimizing code for improved performance in scalable web applications. Implementing responsive design and ensuring cross-browser compatibility."
   },
   {
-    title: "Software Developer",
-    duration: "Emsec (Bristol - U.K) Feb-Sep 2023",
-    description: "Worked on Shodan’s Clone and Breachwise Development. It's a hacker's search engine that lets users search for various types of servers connected to the internet using a variety of filters. We are using the MERN stack technology to build this project. The documentation of Shodan was created by myself."
+    title: "MERN STACK Developer",
+    duration: "Jan 2021 - Feb 2022",
+    description: "Acquired solid knowledge of JavaScript, HTML, CSS, and React Js for front-end web development. Demonstrated proficiency in JavaScript and React, optimizing code for improved performance in scalable web applications. Implementing responsive design and ensuring cross-browser compatibility."
   },
   {
-    title: "Techy Satyam",
-    duration: "Youtube (2019-Present)",
-    description: "Helping students to learn about the latest technology. Utilized effective SEO strategies to optimize video titles, descriptions, and tags, resulting in increased discoverability and organic growth."
-  },
-  {
-    title:"Web-Design Intern",
-    duration:"Azure Skynet Solutions Pvt.Ltd",
-    description:"Learn about how the front-end part of websites works. Adept at translating client requirements into captivating visual concepts,resulting in unique and tailored website designs that align with brand identity."
+    title: "Full Stack Developer",
+    duration: "Feb 2023 - Present",
+    description: "Contributed to the implementation of a Feature Product section on the Pampered Chef Product project using Next.js, Scss, and Redux, enhancing web development standards. Developed frontend features for i-Communify web application, a College Club Managing Web App. Leveraged Next.js and Redux Toolkit, and incorporated Bootstrap and SCSS for a responsive design. Demonstrated expertise in sophisticated web development techniques. Achieved a 20% cost reduction for clients through strategic integration of efficient tools, emphasizing commitment to optimizing project outcomes. Designed and implemented a proficient Rest Api using Express.js. Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products. Implementing responsive design and ensuring cross-browser compatibility. Participating in code reviews and providing constructive feedback to other developers."
   }
 ];
