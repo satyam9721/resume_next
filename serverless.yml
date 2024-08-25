@@ -1,6 +1,0 @@
-# "org" ensures this Service is used with the correct Serverless Framework Access Key.
-org: satyam9721
-# "app" enables Serverless Framework Dashboard features and sharing them with other Services.
-app: resume
-slsNextApp:
-  component: "@sls-next/serverless-component@1.18.0"
