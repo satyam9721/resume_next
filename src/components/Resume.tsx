@@ -38,11 +38,11 @@ type EducationItem = {
   description: string;
 };
 
-export const experienceData: ExperienceItem[] = [
+ const experienceData: ExperienceItem[] = [
   // Your experience data here
 ];
 
-export const educationData: EducationItem[] = [
+const educationData: EducationItem[] = [
   // Your education data here
 ];
 
