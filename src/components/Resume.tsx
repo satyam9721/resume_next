@@ -25,26 +25,26 @@ const Resume = () => {
 //added the extra code from here to first return
 
   
-type ExperienceItem = {
-  companyName: string;
-  title: string;
-  duration: string;
-  description: string;
-};
+// type ExperienceItem = {
+//   companyName: string;
+//   title: string;
+//   duration: string;
+//   description: string;
+// };
 
-type EducationItem = {
-  title: string;
-  duration: string;
-  description: string;
-};
+// type EducationItem = {
+//   title: string;
+//   duration: string;
+//   description: string;
+// };
 
- const experienceData: ExperienceItem[] = [
-  // Your experience data here
-];
+//  const experienceData: ExperienceItem[] = [
+//   // Your experience data here
+// ];
 
-const educationData: EducationItem[] = [
-  // Your education data here
-];
+// const educationData: EducationItem[] = [
+//   // Your education data here
+// ];
 
   
   return (
