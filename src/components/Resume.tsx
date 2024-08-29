@@ -21,6 +21,9 @@ const itemVariants = {
 };
 
 const Resume = () => {
+//fixed item undefined error in deployment
+  const fallbackData: ExperienceItem[] = [];
+  
   return (
     <article className="resume">
       <section className="timeline">
