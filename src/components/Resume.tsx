@@ -22,6 +22,13 @@ const itemVariants = {
 
 const Resume = () => {
 //fixed item undefined error in deployment
+  type ExperienceItem = {
+  companyName: string;
+  title: string;
+  duration: string;
+  description: string;
+};
+//fixed item undefined error in deployment
   const fallbackData: ExperienceItem[] = [];
   
   return (
