@@ -22,6 +22,30 @@ const itemVariants = {
 
 const Resume = () => {
 
+//added the extra code from here to first return
+
+  
+type ExperienceItem = {
+  companyName: string;
+  title: string;
+  duration: string;
+  description: string;
+};
+
+type EducationItem = {
+  title: string;
+  duration: string;
+  description: string;
+};
+
+export const experienceData: ExperienceItem[] = [
+  // Your experience data here
+];
+
+export const educationData: EducationItem[] = [
+  // Your education data here
+];
+
   
   return (
     <article className="resume">
